@@ -1,0 +1,23 @@
+.header {
+  height: 8rem;
+  padding: 0.15rem;
+  background: linear-gradient(to bottom, blue 50%, yellow 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 0 20px 7px rgba(0, 0, 255, 0.75); */
+  box-shadow: 0 0 20px 1px rgb(85, 85, 223);
+  margin-bottom: 20px;
+}
+
+.titleApp {
+  font-size: calc(4vw + 4vh);
+  font-weight: 900;
+  line-height: 1.5;
+  color: rgb(250, 246, 246);
+  background: linear-gradient(to bottom, yellow 50%, blue 50%);
+  /* background: linear-gradient(to right, blue 50%, yellow 50%); */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.01rem blue;
+}

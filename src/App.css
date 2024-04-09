@@ -1,0 +1,6 @@
+.wrapper {
+  background-color: rgb(216, 224, 105);
+  min-width: 320px;
+  max-width: 2000px;
+  margin: 0 auto;
+}

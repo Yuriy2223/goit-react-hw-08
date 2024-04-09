@@ -1,0 +1,33 @@
+.searchBox {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  margin: 0 auto;
+  border: 3px solid blue;
+
+  padding: 10px;
+  border-radius: 10px;
+  background-color: yellow;
+  margin-bottom: 20px;
+}
+
+.inputLabel {
+  color: blue;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.inputSearch {
+  display: block;
+  padding: 10px;
+  border-radius: 7px;
+  color: blue;
+  border: 3px solid blue;
+  transition: box-shadow 0.3s ease-in-out;
+  outline: 0;
+}
+
+.inputSearch:hover,
+.inputSearch:focus {
+  box-shadow: 0 0 15px blue;
+}
