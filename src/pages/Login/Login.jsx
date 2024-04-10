@@ -1,11 +1,9 @@
-// import DocumentTitle from '../components/DocumentTitle';
-import { LoginForm } from "../../hooks/index";
+import { LoginForm, DocumentTitle } from "../../hooks/index";
 
 export default function Login() {
   return (
     <div>
-      {/* <DocumentTitle>Login</DocumentTitle> */}
-      <h2>Login</h2>
+      <DocumentTitle>Login</DocumentTitle>
       <LoginForm />
     </div>
   );

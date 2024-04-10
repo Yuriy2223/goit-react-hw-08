@@ -1,12 +1,9 @@
-// import DocumentTitle from '../components/DocumentTitle';
-// import { RegistrationForm } from '../components/RegisterForm/RegisterForm';
-import { RegistrationForm } from "../../hooks/index";
+import { RegistrationForm, DocumentTitle } from "../../hooks/index";
 
-export default function Register() {
+export default function Registration() {
   return (
     <div>
-      {/* <DocumentTitle>Registration</DocumentTitle> */}
-      <h2>Registration</h2>
+      <DocumentTitle>Registration</DocumentTitle>
       <RegistrationForm />
     </div>
   );

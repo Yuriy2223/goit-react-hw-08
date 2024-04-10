@@ -19,4 +19,13 @@ export { default as Home } from "../pages/Home/Home";
 export { default as Login } from "../pages/Login/Login";
 export { default as Registration } from "../pages/Registration/Registration";
 
+export { default as DocumentTitle } from "../components/DocumentTitle/DocumentTitle";
+
 export { default as useAuth } from "./useAuth";
+
+export { default as ContactEditor } from "../components/ContactEditor/ContactEditor";
+
+// export const Home = lazy(() => import("../pages/Home/Home"));
+// export const Registration = lazy(() => import("../pages/Registration/Registration"));
+// export const Login = lazy(() => import("../pages/Login/Login"));
+// export const Contacts = lazy(() => import("../pages/Contacts/Contacts"));
