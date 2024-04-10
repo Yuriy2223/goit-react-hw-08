@@ -22,11 +22,11 @@
 // export default ContactList;
 /**===================== */
 import { useSelector } from "react-redux";
-import { Contact } from "../Contact/Contact";
+import Contact from "../Contact/Contact";
 import { selectAllContacts } from "../../redux/contacts/selectors";
 import css from "./ContactList.module.css";
 
-export const ContactList = () => {
+const ContactList = () => {
   const contacts = useSelector(selectAllContacts);
 
   return (
@@ -39,3 +39,4 @@ export const ContactList = () => {
     </ul>
   );
 };
+export default ContactList;

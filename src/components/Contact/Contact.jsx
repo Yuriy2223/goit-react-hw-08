@@ -37,9 +37,9 @@
 
 import { useDispatch } from "react-redux";
 import { deleteContact } from "../../redux/contacts/operations";
-import css from "./Task.module.css";
+import css from "./Contact.module.css";
 
-export const Contact = ({ id, text }) => {
+ const Contact = ({ id, text }) => {
   const dispatch = useDispatch();
 
   const handleDelete = () => dispatch(deleteContact(id));
@@ -53,3 +53,5 @@ export const Contact = ({ id, text }) => {
     </div>
   );
 };
+
+export default Contact;

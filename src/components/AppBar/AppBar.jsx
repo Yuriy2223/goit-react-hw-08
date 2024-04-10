@@ -1,7 +1,7 @@
 import { Navigation, UserMenu, AuthNav, useAuth } from "../../hooks/index";
 import styles from "./AppBar.module.css";
 
-export const AppBar = () => {
+const AppBar = () => {
   const { isLoggedIn } = useAuth();
 
   return (
@@ -11,3 +11,5 @@ export const AppBar = () => {
     </header>
   );
 };
+
+export default AppBar;

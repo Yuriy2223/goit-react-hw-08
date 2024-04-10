@@ -1,20 +1,20 @@
-import { useDispatch } from 'react-redux';
-import { addContact } from '../../redux/contacts/operations';
-import css from './ContactEditor.css';
+import { useDispatch } from "react-redux";
+import { addContact } from "../../redux/contacts/operations";
+import css from "./ContactEditor.module.css";
 
-export const ContactEditor = () => {
+const ContactEditor = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.currentTarget;
     const text = form.elements.text.value;
-    if (text !== '') {
+    if (text !== "") {
       dispatch(addContact(text));
       form.reset();
       return;
     }
-    alert('Task cannot be empty. Enter some text!');
+    alert("Task cannot be empty. Enter some text!");
   };
 
   return (
@@ -26,3 +26,5 @@ export const ContactEditor = () => {
     </form>
   );
 };
+
+export default ContactEditor;
