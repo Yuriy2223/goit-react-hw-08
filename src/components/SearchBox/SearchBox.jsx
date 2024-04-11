@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { changeFilter, selectNameFilter } from "../../redux/filters/slise";
+import { DocumentTitle } from "../../hooks/index";
 import styles from "./SearchBox.module.css";
 
 const SearchBox = () => {
@@ -8,6 +9,7 @@ const SearchBox = () => {
 
   return (
     <div className={styles.searchBox}>
+      <DocumentTitle>SearchBox</DocumentTitle>
       <label htmlFor="names" className={styles.inputLabel}>
         Сontact search
       </label>

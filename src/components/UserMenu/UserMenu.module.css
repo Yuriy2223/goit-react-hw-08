@@ -6,4 +6,24 @@
 
 .username {
   font-weight: 700;
+  font-size: 24px;
+  color: blue;
 }
+
+.btn {
+  border-radius: 4px;
+  border: 1px solid blue;
+  padding: 6px 16px;
+  color: yellow;
+  background-color: blue;
+  font-weight: 700;
+  line-height: 1.5;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 0 0 20px rgb(37, 37, 216);
+}
+
+

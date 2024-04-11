@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { logIn } from "../../redux/auth/operations";
-import css from "./LoginForm.module.css";
+import { DocumentTitle } from "../../hooks/index";
+import styles from "./LoginForm.module.css";
 
 const LoginForm = () => {
   const dispatch = useDispatch();
@@ -27,46 +28,21 @@ const LoginForm = () => {
   };
 
   return (
-    <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
-      <label className={css.label}>
+    <form className={styles.form} onSubmit={handleSubmit} autoComplete="off">
+      <DocumentTitle>LoginForm</DocumentTitle>
+      <label className={styles.inputLabel}>
         Email
-        <input type="email" name="email" />
+        <input className={styles.formImput} type="email" name="email" />
       </label>
-      <label className={css.label}>
+      <label className={styles.inputLabel}>
         Password
-        <input type="password" name="password" />
+        <input className={styles.formImput} type="password" name="password" />
       </label>
-      <button type="submit">Log In</button>
+      <button className={styles.formBtn} type="submit">
+        Log In
+      </button>
     </form>
   );
 };
 
 export default LoginForm;
-/**=============== */
-// import { Formik, Field, Form } from "formik";
-// import { useDispatch } from "react-redux";
-// import { logIn } from "../redux/auth/authSlice";
-
-// export default function LoginForm() {
-//   const dispatch = useDispatch();
-
-//   return (
-//     <Formik
-//       initialValues={{ email: "", password: "" }}
-//       onSubmit={(values) => dispatch(logIn(values))}
-//     >
-//       <Form>
-//         <label>
-//           Email
-//           <Field type="email" name="email" />
-//         </label>
-//         <label>
-//           Password
-//           <Field type="password" name="password" />
-//         </label>
-//         <button type="submit">Log in</button>
-//       </Form>
-//     </Formik>
-//   );
-// }
-/**=============== */

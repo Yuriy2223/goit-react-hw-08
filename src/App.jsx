@@ -7,7 +7,7 @@ import {
   PrivateRoute,
   RestrictedRoute,
   // ErrorMessage,
-  // Loader,
+  Loader,
 } from "./hooks/index";
 import { refreshUser } from "./redux/auth/operations";
 import useAuth from "./hooks/useAuth";
@@ -26,7 +26,7 @@ const App = () => {
   }, [dispatch]);
 
   return isRefreshing ? (
-    <b>Refreshing user...</b>
+    <Loader/>
   ) : (
     <Layout>
       <Routes>

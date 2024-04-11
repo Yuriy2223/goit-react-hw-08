@@ -1,11 +1,42 @@
 .link {
   display: inline-block;
   text-decoration: none;
-  padding: 12px;
+  padding: 6px 16px;
+  background-color: blue;
+
   font-weight: 700;
-  color: #2a363b;
+  line-height: 1.5;
+
+  border: 3px solid rgb(216, 224, 105);
+  color: yellow;
+  border-radius: 8px;
+  /* background: linear-gradient(to bottom, blue 50%, yellow 50%); */
+  /* background: linear-gradient(to bottom, blue 50%, rgb(190, 190, 4) 50%); */
+  transition: all 0.3s ease-in-out;
 }
 
-.link.active {
-  color: #e84a5f;
+.linkRight {
+  margin-right: 40px;
+  margin-left: 30px;
+}
+
+.link:hover,
+.link:focus {
+  box-shadow: 0 0 20px blue;
+  border-color: blue;
+}
+
+.activeLink {
+  box-shadow: 0 0 20px rgb(37, 37, 216);
+}
+
+.navSpan {
+  font-weight: 700;
+  line-height: 1.5;
+  color: white;
+  /* background: linear-gradient(to bottom, yellow 50%, blue 50%); */
+  /* background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.01rem blue; */
+  transition: all 0.3s ease-in-out;
 }
