@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { addContact } from "../../redux/contacts/operations";
-import css from "./ContactEditor.module.css";
+import styles from "./ContactEditor.module.css";
 
 const ContactEditor = () => {
   const dispatch = useDispatch();
@@ -18,9 +18,9 @@ const ContactEditor = () => {
   };
 
   return (
-    <form className={css.form} onSubmit={handleSubmit}>
-      <input name="text" className={css.input} />
-      <button type="submit" className={css.button}>
+    <form className={styles.form} onSubmit={handleSubmit}>
+      <input name="text" className={styles.input} />
+      <button type="submit" className={styles.button}>
         Add task
       </button>
     </form>
