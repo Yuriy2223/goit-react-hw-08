@@ -11,7 +11,7 @@ const SearchBox = () => {
     <div className={styles.searchBox}>
       <DocumentTitle>SearchBox</DocumentTitle>
       <label htmlFor="names" className={styles.inputLabel}>
-        Сontact search
+        Contact search
       </label>
       <input
         className={styles.inputSearch}
